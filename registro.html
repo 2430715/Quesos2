@@ -27,8 +27,9 @@
             margin-bottom: 12px;
             border: 1px solid #ccc;
             border-radius: 4px;
+            box-sizing: border-box;
         }
-        button {
+        .btn-register {
             width: 100%;
             padding: 12px;
             background: green;
@@ -37,8 +38,11 @@
             font-size: 16px;
             cursor: pointer;
             border-radius: 4px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
         }
-        button:hover {
+        .btn-register:hover {
             background: darkgreen;
         }
     </style>
@@ -69,7 +73,7 @@
 
         <input type="password" name="confirm_password" placeholder="Confirmar contraseña" />
 
-        <button type="button">Crear cuenta</button>
+        <a href="estadistica.html" class="btn-register">Crear cuenta</a>
     </form>
 </div>
 
