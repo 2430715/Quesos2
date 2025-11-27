@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido - Inventario Central</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            background-color: #f8f9fa; 
+            margin: 0; 
+            text-align: center;
+        }
+        .welcome-box { 
+            background: white; 
+            padding: 60px; 
+            border-radius: 12px; 
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); 
+            width: 90%; 
+            max-width: 550px;
+        }
+        h1 { 
+            color: #343a40; 
+            margin-bottom: 15px; 
+            font-size: 2.2em;
+        }
+        p { 
+            color: #6c757d; 
+            margin-bottom: 50px; 
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .actions-container a {
+            text-decoration: none;
+            padding: 15px 35px;
+            border-radius: 8px;
+            margin: 0 10px;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        .btn-login {
+            background-color: #007bff;
+            color: white;
+            border: 2px solid #007bff;
+        }
+        .btn-login:hover {
+            background-color: #0056b3;
+            box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+        }
+        .btn-register {
+            background-color: #28a745;
+            color: white;
+            border: 2px solid #28a745;
+        }
+        .btn-register:hover {
+            background-color: #1e7e34;
+            box-shadow: 0 4px 10px rgba(40, 167, 69, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="welcome-box">
+        <h1>Sistema de Gestión de Inventario Distribuido</h1>
+        <p>
+            Bienvenido al portal de administración de la fábrica. 
+            Inicie sesión para controlar el stock central, gestionar el catálogo de productos y procesar los pedidos de sus sucursales socias.
+        </p>
+        
+        <div class="actions-container">
+            <a href="login.html" class="btn-login">Iniciar Sesión</a>
+            <a href="registro.html" class="btn-register">Registrarse (Admin)</a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo de Productos - Fábrica Central de Quesos</title>
+<style>
+    body { font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0; background-color:#f4f4f4; color:#333;}
+    .navbar { background-color:#5d4037; color:white; padding:15px 30px; display:flex; justify-content:space-between; align-items:center; box-shadow:0 2px 4px rgba(0,0,0,0.1);}
+    .logo { font-size:1.5em; margin:0;}
+    .main-menu ul { list-style:none; display:flex; padding:0; margin:0;}
+    .main-menu li a { color:white; text-decoration:none; padding:10px 15px; border-radius:4px; transition: background-color 0.3s;}
+    .main-menu li a:hover, .main-menu li a.active { background-color:#795548; }
+    .user-info a { color:#ffeb3b; text-decoration:none; margin-left:10px;}
+    .content-area { padding:30px;}
+    h2 { color:#5d4037; margin-bottom:10px;}
+    table { width:100%; border-collapse:collapse; background:white; border-radius:8px; overflow:hidden; box-shadow:0 4px 8px rgba(0,0,0,0.05); margin-bottom:20px;}
+    th, td { padding:12px 15px; text-align:left;}
+    th { background-color:#8d6e63; color:white;}
+    tr:nth-child(even){ background-color:#f9f9f9;}
+    img { width:60px; height:60px; object-fit:cover; border-radius:6px;}
+    .btn-action { padding:6px 12px; border:none; border-radius:4px; color:white; cursor:pointer; transition: background-color 0.3s; margin-right:5px;}
+    .btn-add { background-color:#2196f3; }
+    .btn-add:hover { background-color:#1976d2; }
+    .btn-save { background-color:#4caf50; }
+    .btn-save:hover { background-color:#388e3c; }
+    .btn-delete { background-color:#f44336; }
+    .btn-delete:hover { background-color:#c62828; }
+    .footer { text-align:center; padding:15px; color:white; background-color:#5d4037; margin-top:30px; font-size:0.9em;}
+</style>
+</head>
+<body>
+
+<header class="navbar">
+    <h1 class="logo">Fábrica de Quesos: Administración Central</h1>
+    <nav class="main-menu">
+        <ul>
+            <li><a href="inventario.html">Inventario (Quesos/Materia Prima)</a></li>
+            <li><a href="pedidos.html">Pedidos Sucursales</a></li>
+            <li><a href="catalogo.html" class="active">Recetas/Catálogo</a></li>
+            <li><a href="usuarios.html">Socios/Usuarios</a></li>
+            <li><a href="estadisticas.html">Estadistica</a></li>
+        </ul>
+    </nav>
+    <div class="user-info">Bienvenido, Maestro Quesero | <a href="login.html">Cerrar Sesión</a></div>
+</header>
+
+<main class="content-area">
+    <h2>Catálogo de Productos</h2>
+    <p>Aquí puedes agregar o modificar los productos que los socios verán en la app móvil.</p>
+
+    <button class="btn-action btn-add">Agregar Producto</button>
+
+    <table id="tablaCatalogo">
+        <thead>
+            <tr>
+                
+                <th>Nombre del Producto</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Disponible</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                
+                <td contenteditable="true">Queso Oaxaca</td>
+                <td contenteditable="true">Queso artesanal suave y fibroso, ideal para fundir.</td>
+                <td contenteditable="true">$120/kg</td>
+                <td contenteditable="true">Sí</td>
+                <td>
+                    <button class="btn-action btn-save">Guardar</button>
+                    <button class="btn-action btn-delete">Eliminar</button>
+                </td>
+            </tr>
+            <tr>
+                
+                <td contenteditable="true">Queso Manchego</td>
+                <td contenteditable="true">Queso maduro de sabor intenso y textura firme.</td>
+                <td contenteditable="true">$150/kg</td>
+                <td contenteditable="true">Sí</td>
+                <td>
+                    <button class="btn-action btn-save">Guardar</button>
+                    <button class="btn-action btn-delete">Eliminar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+
+<footer class="footer">
+    <p>© 2025 Fábrica de Quesos [Nombre de la Fábrica] - Control Total de Inventario</p>
+</footer>
+
+</body>
+</html>
