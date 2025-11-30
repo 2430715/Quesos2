@@ -50,32 +50,35 @@
 
     <body>
 
-    <div class="container">
-    <h2>Registro Admin</h2>
+        <div class="container">
+        <h2>Registro Admin</h2>
 
-    <form>
+        <form id="registerForm">
 
-        <input type="text" name="name" placeholder="Nombre completo" />
+                <input id="name" type="text" name="name" placeholder="Nombre completo" required />
 
-        <input type="text" name="factory_name" placeholder="Nombre de la fábrica" />
+                <input id="factory_name" type="text" name="factory_name" placeholder="Nombre de la fábrica" required />
 
-        <input type="text" name="phone" placeholder="Teléfono" />
+                <input id="phone" type="text" name="phone" placeholder="Teléfono" />
 
-        <input type="text" name="street" placeholder="Dirección" />
+                <input id="street" type="text" name="street" placeholder="Dirección" />
 
-        <input type="text" name="city" placeholder="Ciudad" />
+                <input id="city" type="text" name="city" placeholder="Ciudad" />
 
-        <input type="text" name="postal" placeholder="Código postal" />
+                <input id="postal" type="text" name="postal" placeholder="Código postal" />
 
-        <input type="email" name="email" placeholder="Correo electrónico" />
+                <input id="email" type="email" name="email" placeholder="Correo electrónico" required />
 
-        <input type="password" name="password" placeholder="Contraseña" />
+                <input id="password" type="password" name="password" placeholder="Contraseña" required />
 
-        <input type="password" name="confirm_password" placeholder="Confirmar contraseña" />
+                <input id="confirm_password" type="password" name="confirm_password" placeholder="Confirmar contraseña" required />
 
-        <a href="estadistica.html" class="btn-register">Crear cuenta</a>
-    </form>
+                <button type="submit" class="btn-register">Crear cuenta</button>
+        </form>
 </div>
+
+<!-- Firebase y scripts -->
+<script type="module" src="auth.js"></script>
 
 </body>
 </html>
